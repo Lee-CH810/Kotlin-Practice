@@ -1,14 +1,16 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:columnCount="3">
 
-    <Button android:text="A"
+    <Button android:text="@string/A"
         android:layout_columnSpan="2"
-        android:layout_rowSpan="2"
-        />
-    <Button android:text="B" />
+        android:layout_rowSpan="2" />
+    <!--android:layout_gravity: fill을 통해 A가 차지하지만 빈 자리를 채워줄 수 있음-->
+    <Button android:text="B"
+        tools:ignore="HardcodedText"/>
     <Button android:text="C" />
     <Button android:text="D" />
     <Button android:text="E" />
